@@ -1,0 +1,17 @@
+
+<div class="dropdown-divider"></div>
+<div class="container-fluid">
+    <h3>New Customer</h3>
+</div>
+<div class="dropdown-divider"></div>
+
+<div class="container-fluid">
+	<%= bootstrap_form_for(@customer, model: @customer, local: true, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |customer| %>
+		
+			<%= customer.text_field :firstname, label: "Name:" %>
+		<%= customer.text_field :lastname, label: "Lastname:" %>
+    <%= customer.text_field :age, label: "Age:" %>
+    <%= customer.text_field :occupation, label: "Occupation:" %>
+    <%= customer.submit "Create", :class => 'btn btn-dark' %>
+	<% end %>
+</div>  

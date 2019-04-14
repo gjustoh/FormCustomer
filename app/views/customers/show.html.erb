@@ -1,0 +1,32 @@
+<div class="dropdown-divider"></div>
+<div class="container-fluid" align="center">
+    <div class="row">
+        <div class="col"><h3>Showing Customer</h3></div>
+        <div class="col"><%= link_to " Customer List", customers_path, :class => "btn btn-success " %></div>
+        <div class="col"></div>
+    </div>
+</div>
+<hr>
+
+<div class="dropdown-divider"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2" > <strong>First Name: </strong> </div>
+        <div class="col-sm-10"> <%= @customer.firstname %></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" > <strong>Last Name: </strong> </div>
+        <div class="col-sm-10" > <%= @customer.lastname %> </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" > <strong>Age: </strong> </div>
+        <div class="col-sm-10"> <%= @customer.age %> </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2" > <strong>Occupation: </strong> </div>
+        <div class="col-sm-10" > <%= @customer.occupation %> </div>
+    </div>
+</div>
+<div class="dropdown-divider"></div>
+<!-- <div class="container-fluid">
+</div> -->
